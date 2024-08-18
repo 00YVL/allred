@@ -36,9 +36,9 @@
                     <div class="pfp"><img src="imgs/pfp.jpg" width="100px" ></div>
                   <p>Brand new ventador i drove that bitch right to the mood</p>
                   <div class="socials">
-                    <a target="_blank" href="https://discord.com/users/1255620613826023586"><img id="social" src="https://files.catbox.moe/rssiex.png" width="30px" draggable="false"></a>
-                    <a id="copy-trigger" class="copy-link" onclick="copyToClipboard(); return false;">
-                        <img id="social" src="imgs/session.png" width="30px" draggable="false" alt="Social Icon">
+                    <a target="_blank" href="https://discord.com/users/341482811708145664"><img id="social" src="https://files.catbox.moe/rssiex.png" width="30px" draggable="false"></a>
+                    <a href="https://instagram.com/ranouttafent">
+                        <img id="insta" src="imgs/ig.png" width="30px" draggable="false" alt="my ig">
                     </a>
                   </div>
                 </div>
@@ -46,26 +46,7 @@
 
         </div>
     </div>
-    <script>
-        function copyToClipboard() {
-            const textElement = document.getElementById('session');
-            
-            if (textElement) {
-                const textArea = document.createElement('textarea');
-                textArea.value = textElement.textContent || textElement.innerText;
-                document.body.appendChild(textArea);
-                
-                textArea.select();
-                
-                document.execCommand('copy');
-                
-                document.body.removeChild(textArea);
-                
-                alert('Session ID copied to clipboard.');
-            } else {
-                alert('Element with id "session" not found.');
-            }
-        }
+   
       const audio = document.getElementById("background-music");
       const overlay = document.getElementById("overlay");
 
@@ -74,8 +55,9 @@
           audio.muted = false;
           audio.play();
       });
-    </script>
-
-    <audio autoplay src="tunes.mp3"></audio>
+      <audio id="background-music" loop>
+        <source src="assets/BACKR00MS.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
 </body>
 </html>
